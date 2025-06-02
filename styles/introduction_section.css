@@ -14,10 +14,11 @@
 }
 
 .div_avatar img {
-    width: 112px;
-    height: 112px;
+    width: 140px;
+    height: 140px;
     margin-top: 120px;
     margin-bottom: 56px;
+    object-fit: cover;
 }
 
 .div_textos_apresentacao {

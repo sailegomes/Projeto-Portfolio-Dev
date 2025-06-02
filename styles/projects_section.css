@@ -1,0 +1,71 @@
+#projects_section {
+    background-color: #16181D;
+    background-size: cover;
+    padding: 72px 0 144px 0;
+}
+
+.grupo_projects_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font: var(--inconsolata-text);
+        color: var(--red-color);
+    }
+
+    h2 {
+        font: var(--asap-title-md);
+        color: var(--gray-color-600);
+        margin-top: 8px;
+        margin-bottom: 56px;
+    }
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: var(--gray-color-300);
+        border-radius: 12px;
+        padding: 12px 12px 17px 12px;
+
+        h1 {
+            color: var(--gray-color-600);
+            font: var(--asap-title-sm);
+            text-align: left;
+            padding-top: 24px;
+            padding-bottom: 8px;
+        }
+
+        p {
+            color: var(--gray-color-500);
+            font: var(--maven-pro-text-sm);
+        }
+
+        span {
+            text-align: left;
+        }
+
+        img {
+            object-fit: cover;
+            width: 306px;
+            height: 156px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+
+}
