@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--background-color);
+}
+
+footer span {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+
+    p {
+        color: var(--gray-color-600);
+        font: var(--maven-pro-text-sm);
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
