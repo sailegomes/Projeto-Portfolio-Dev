@@ -41,6 +41,7 @@
         background-color: var(--gray-color-300);
         border-radius: 12px;
         padding: 12px 12px 17px 12px;
+        justify-content: center;
 
         h1 {
             color: var(--gray-color-600);
@@ -67,4 +68,189 @@
         }
     }
 
+}
+
+.texto2 {
+    display: none;
+}
+
+.carrossel {
+    display: none;
+}
+
+/* Tablets (paisagem) e notebooks menores */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .projetos ul li img {
+        object-fit: contain;
+        width: 260px;
+        height: 133px;
+    }
+
+    .texto1 {
+        display: none;
+    }
+
+    .texto2 {
+        display: block;
+    }
+
+    .carrossel {
+        display: none;
+    }
+
+    .carrossel_tecnologias {
+        display: none;
+    }
+}
+
+/* Tablets (retrato) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .projetos {
+        display: none;
+    }
+
+    .carrossel {
+        display: grid !important;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        /* display: block; */
+        /* position: relative; */
+    }
+
+    .carrossel_tecnologias {
+        display: none;
+    }
+
+}
+
+/* Celulares */
+@media (min-width: 481px) and (max-width: 767px) {
+    .projetos {
+        display: none;
+    }
+
+    .carrossel {
+        display: block;
+
+        /* Estilo básico para o Swiper funcionar */
+        .swiper {
+            width: 100%;
+            height: 290px;
+            max-width: 670px;
+            margin: 0 0;
+            /* overflow: visible; */
+            /* Ajuste conforme quiser */
+            z-index: 1;
+            position: relative;
+            pointer-events: auto;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            z-index: 1 !important;
+        }
+
+        .swiper-slide {
+            flex-shrink: 0;
+            width: 306px;
+            /* Ou o tamanho que quiser */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--gray-color-300);
+            border-radius: 12px;
+            padding: 12px 12px 17px 12px;
+
+
+            h1 {
+                color: var(--gray-color-600);
+                font: var(--asap-title-sm);
+                text-align: left;
+                padding-top: 24px;
+                padding-bottom: 8px;
+            }
+
+            p {
+                color: var(--gray-color-500);
+                font: var(--maven-pro-text-sm);
+            }
+
+            span {
+                text-align: left;
+            }
+
+            img {
+                object-fit: cover;
+                width: 200px;
+                height: 102px;
+                border-radius: 8px;
+            }
+        }
+
+        .swiper-pagination {
+            top: 955px !important;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: var(--gray-color-400) !important;
+            /* cor das bolinhas */
+            opacity: 1 !important;
+            transition: background-color 0.3s !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--red-color) !important;
+            /* cor da bolinha ativa */
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute !important;
+            color: var(--red-color) !important;
+            /* Bem alto */
+            top: 1125px !important;
+
+            background-color: var(--red-color) !important;
+            /* Fundo vermelho */
+            color: white !important;
+            /* Ícone branco */
+            border-radius: 50% !important;
+            /* Deixa o fundo circular */
+            width: 23px !important;
+            /* Tamanho do círculo */
+            height: 23px !important;
+            display: flex !important;
+            /* Centraliza o ícone dentro */
+            align-items: center !important;
+            justify-content: center !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+            /* Sombra opcional */
+            z-index: 9999 !important;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 15px !important;
+            font-weight: bold;
+        }
+
+        /* Posicionando a setas um pouco mais para fora */
+        .swiper-button-next {
+            right: 45px !important;
+            /* mais pra fora */
+            padding-left: 2px;
+            transform: translateX(100%) !important;
+        }
+
+        .swiper-button-prev {
+            left: 45px !important;
+            /* mais pra fora */
+            padding-right: 2px;
+            transform: translateX(-100%) !important;
+        }
+
+        .swiper-scrollbar {
+            display: none;
+        }
+    }
 }

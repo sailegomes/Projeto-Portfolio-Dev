@@ -45,3 +45,165 @@
 
 
 
+/* Estilo básico para o Swiper funcionar */
+.swiper {
+    width: 100%;
+    height: 290px;
+    max-width: 670px;
+    margin: 0 0;
+    /* overflow: visible; */
+    /* Ajuste conforme quiser */
+    z-index: 1;
+    position: relative;
+    pointer-events: auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    z-index: 1 !important;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 306px;
+    /* Ou o tamanho que quiser */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-color-300);
+    border-radius: 12px;
+    padding: 12px 12px 17px 12px;
+
+
+    h1 {
+        color: var(--gray-color-600);
+        font: var(--asap-title-sm);
+        text-align: left;
+        padding-top: 24px;
+        padding-bottom: 8px;
+    }
+
+    p {
+        color: var(--gray-color-500);
+        font: var(--maven-pro-text-sm);
+    }
+
+    span {
+        text-align: left;
+    }
+
+    img {
+        object-fit: cover;
+        width: 306px;
+        height: 156px;
+        border-radius: 8px;
+    }
+}
+
+.swiper-pagination {
+    top: 955px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--gray-color-400) !important;
+    /* cor das bolinhas */
+    opacity: 1 !important;
+    transition: background-color 0.3s !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--red-color) !important;
+    /* cor da bolinha ativa */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    color: var(--red-color) !important;
+    /* Bem alto */
+    top: 1125px !important;
+
+    background-color: var(--red-color) !important;
+    /* Fundo vermelho */
+    color: white !important;
+    /* Ícone branco */
+    border-radius: 50% !important;
+    /* Deixa o fundo circular */
+    width: 23px !important;
+    /* Tamanho do círculo */
+    height: 23px !important;
+    display: flex !important;
+    /* Centraliza o ícone dentro */
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    /* Sombra opcional */
+    z-index: 9999 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 15px !important;
+    font-weight: bold;
+}
+
+/* Posicionando a setas um pouco mais para fora */
+.swiper-button-next {
+    right: 45px !important;
+    /* mais pra fora */
+    padding-left: 2px;
+    transform: translateX(100%) !important;
+}
+
+.swiper-button-prev {
+    left: 45px !important;
+    /* mais pra fora */
+    padding-right: 2px;
+    transform: translateX(-100%) !important;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+/* ###################################################################################################################### */
+
+/* Swiper para a lista de tecnologias */
+
+
+/* Estilo básico para o Swiper funcionar */
+.carrossel_tecnologias,
+.swiper {
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 0;
+    /* overflow: visible; */
+    /* Ajuste conforme quiser */
+    z-index: 1;
+    position: relative;
+    pointer-events: auto;
+    top: 20px;
+}
+
+.carrossel_tecnologias,
+.swiper-slide {
+    width: 700px;
+    /* Ou o tamanho que quiser */
+    display: flex;
+    align-items: center !important;
+
+    span {
+        color: var(--gray-color-500);
+        font: var(--maven-pro-text-md);
+        font-size: 17px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 25px;
+        height: 25px;
+        margin-bottom: -5px;
+    }
+}
+

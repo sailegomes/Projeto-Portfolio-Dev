@@ -111,3 +111,50 @@
     height: 32px;
     margin-bottom: 57px;
 }
+
+.carrossel_tecnologias {
+    display: none;
+}
+
+/* Telas grandes */
+@media (min-width: 1920px) {
+    .carrossel_tecnologias {
+        display: none !important;
+    }
+
+    .div_avatar {
+        padding-top: 100px;
+    }
+}
+
+/* Tablets (retrato) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carrossel_tecnologias {
+        display: none !important;
+    }
+}
+
+/* Tablets (paisagem) e notebooks menores */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carrossel_tecnologias {
+        display: none !important;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .carrossel_tecnologias {
+        display: none !important;
+    }
+}
+
+/* Celulares */
+@media (min-width: 481px) and (max-width: 767px) {
+    .lista_tecnologias {
+        display: none;
+    }
+
+    .seta_mudanca_secao{
+        display: none;
+    }
+}

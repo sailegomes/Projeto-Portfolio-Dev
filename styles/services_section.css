@@ -55,3 +55,26 @@
         }
     }
 }
+
+
+
+/* Tablets (retrato) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .grupo_services_section {
+        ul {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul li {
+            padding-inline: 13px;
+            padding-block: 13px;
+        }
+    }
+
+    .carrossel_tecnologias {
+        display: none;
+    }
+}
